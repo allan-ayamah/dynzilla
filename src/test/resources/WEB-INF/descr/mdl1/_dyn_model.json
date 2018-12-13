@@ -1,0 +1,106 @@
+{
+  "service": "com.atena.dynzilla.core.DefaultModelService",
+  "manager": "com.atena.dynzilla.core.DefaultModelManager",
+  "id": "mdl1",
+  "name": "Welcome to Dynzilla Model",
+  "descriptors": {
+    "msg1": {
+      "service": "com.atena.dynzilla.components.view.MessageComponentService",
+      "name": "Welcome message component",
+      "message": "Welcome to page 1, use the link to see your details"
+    },
+    "ln1": {
+      "service": "com.atena.dynzilla.core.DefaultLinkService",
+      "name": "view details link",
+      "sourceId": "msg1",
+      "targetId": "dtl1",
+      "pageSource": "page1",
+      "propagations": [
+        {
+          "sourceComponent": "msg1",
+          "targetParam": "dtl1.userId",
+          "sourceValue": "256"
+        }
+      ]
+    },
+    "page1": {
+      "service": "com.atena.dynzilla.core.DefaultPageService",
+      "name": "Welcome page",
+      "navigation": [
+        {
+          "links": [
+            "page"
+          ],
+          "interPage": "always"
+        }
+      ],
+      "manualLinks": [
+        "ln1"
+      ],
+      "componentComputations": [
+        {
+          "componentId": "msg1"
+        }
+      ],
+      "pageParams": []
+    },
+    "page2": {
+      "service": "com.atena.dynzilla.core.DefaultPageService",
+      "name": "User details",
+      "navigations": [
+        {
+          "links": [
+            "page2"
+          ],
+          "interPage": "always"
+        },
+        {
+          "links": [
+            "ln1"
+          ],
+          "interPage": "true"
+        },
+        {
+          "links": [
+            "ln4"
+          ]
+        },
+        {
+          "links": [
+            "ln5"
+          ]
+        }
+      ],
+      "linkSequences": [
+        {
+          "name": null,
+          "links": [
+            "ln2",
+            "ln3",
+            "ln6"
+          ]
+        }
+      ],
+      "manualLinks": [
+        "ln4",
+        "ln5"
+      ],
+      "componentComputations": [
+        {
+          "componentId": "dtl1"
+        },
+        {
+          "componentId": "lst1"
+        }
+      ],
+      "pageParams": [
+        {
+          "componentId": "dtl1",
+          "params": [
+            "dtl1.userId"
+          ]
+        }
+      ]
+    }
+  }
+}
