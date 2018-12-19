@@ -1,0 +1,173 @@
+{
+  "service": "com.atena.dynzilla.core.ModelService",
+  "name": "Operation module test",
+  "manager": {
+    "service": "com.atena.dynzilla.core.ModelManager",
+    "serviceContextHelpers": {
+      "operationContext": "com.atena.dynzilla.core.OperationContextHelper",
+      "pageContext": "com.atena.dynzilla.core.PageContextParameterService"
+    }
+  },
+  "descriptors": {
+    "mic1": {
+      "service": "com.atena.dynzilla.component.module.ModuleInstanceComponent",
+      "module": {
+        "id": "opm1"
+      },
+      "DYNContext": {
+        "context": "operationContext",
+        "outgoingLinks": [
+          {
+            "id": "okln1OnMic1",
+            "resultCode": "success.opc1"
+          },
+          {
+            "id": "okln3OnMic1",
+            "resultCode": "success.opc3"
+          },
+          {
+            "id": "koln1OnMic1",
+            "resultCode": "error.opc2"
+          }
+        ]
+      }
+    },
+    "opm1": {
+      "service": "com.atena.dynzilla.component.module.OperationModule",
+      "inputParamCollectorId": "ipc1",
+      "OKParamCollectors": ["opc1"],
+      "KOParamCollectors": ["opc2"]
+    },
+    "ipc1": {
+      "service": "com.atena.dynzilla.component.module.ParameterCollector",
+      "type": "INPUT",
+      "params": [
+        {
+          "id": "icc1",
+          "name": "firstOperand"
+        },
+        {
+          "id": "icc2",
+          "name": "secondOperand"
+        }
+      ],
+      "DYNContext": {
+        "context": "operationContext",
+        "parentContainer": "opm1",
+        "outgoingLinks": [
+          {
+            "id": "lnTransport1FromIpc1",
+            "resultCode": "success",
+            "data": "true"
+          },
+          {
+            "id": "okln1OnIpc1",
+            "resultCode": "success"
+          }
+        ]
+      }
+    },
+    "okln1OnIpc1": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "sourceId": "ipc1",
+      "targetId": "sumc1",
+      "propagations": []
+    },
+    "lnTransport1FromIpc1": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "sourceId": "ipc1",
+      "targetId": "sumc1",
+      "propagations": [
+        {
+          "sourceParam": "icc1",
+          "targetParam": "sumc1.firstOperand"
+        },
+        {
+          "sourceParam": "icc2",
+          "targetParam": "sumc1.secondOperand"
+        }
+      ]
+    },
+    "opc1": {
+      "service": "com.atena.dynzilla.component.module.ParameterCollector",
+      "type": "OUTPUT",
+      "params": [
+        {
+          "id": "occ1",
+          "name": "result"
+        }
+      ],
+      "DYNContext": {
+        "context": "operationContext",
+        "parentContainer": "opm1",
+        "outgoingLinks": []
+      }
+    },
+    "opc2": {
+      "service": "com.atena.dynzilla.component.module.ParameterCollector",
+      "type": "OUTPUT",
+      "params": [
+        {
+          "id": "occ2",
+          "name": "errorMessage"
+        }
+      ],
+      "DYNContext": {
+        "context": "operationContext",
+        "parentContainer": "opm1",
+        "outgoingLinks": []
+      }
+    },
+    "sumc1": {
+      "service": "com.atena.dynzilla.component.utilities.SumComponent",
+      "name": "Add firstOperand to secondOperand",
+      "inputType": "dynamic",
+      "DYNContext": {
+        "context": "operationContext",
+        "parentContainer": "opm1",
+        "params": [
+          {
+            "id": "sumc1.firstOperand"
+          },
+          {
+            "id": "sumc1.secondOperand"
+          }
+        ],
+        "outgoingLinks": [
+          {
+            "id": "oklnFromSumc1",
+            "resultCode": "success"
+          },
+          {
+            "id": "kolnFromSumc1",
+            "resultCode": "error"
+          }
+        ]
+      }
+    },
+    "oklnFromSumc1": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "name": "OK link from sumc1",
+      "sourceId": "sumc1",
+      "targetId": "opc1",
+      "propagations": [
+        {
+          "sourceParam": "result",
+          "targetParam": "occ1"
+        }
+      ]
+    },
+    "kolnFromSumc1": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "name": "KO link from sumc1",
+      "sourceId": "sumc1",
+      "targetId": "opc2",
+      "propagations": [
+        {
+          "constantSourceValue": "ERROR occured while computing 'sumc1' ",
+          "targetParam": "occ2"
+        }
+      ]
+    }
+  }
+}

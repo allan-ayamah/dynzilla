@@ -1,8 +1,10 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
 group 'com.atena.dynzilla'
 version '0.0-SNAPSHOT'
-
-apply plugin: 'java'
-apply plugin: 'groovy'
 
 sourceCompatibility = 1.8
 
@@ -17,24 +19,20 @@ dependencies {
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
     compile group: 'commons-lang', name: 'commons-lang', version: '2.4'
     compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
     compile 'com.google.code.gson:gson:2.8.5'
 }
 
-ext {
-    appName = project.name
+test {
+    String resourceDir = "$buildDir/resources/test/".replace("/", File.separator);
+    String webInfDir = "WEB-INF/".replace("/", File.separator)
+    String descrDir = "WEB-INF/descr/".replace("/", File.separator)
+
+    options {
+        systemProperties([
+                "RESOURCE_DIR": resourceDir,
+                "WEB_INF_REL_DIR": webInfDir,
+                "DESCR_REL_DIR": descrDir
+        ]);
+    }
 }
-
-task copyTestPropertiesToClassFolder(type: Copy) {
-    from "$buildDir/resources/test/WEB-INF/classes"
-    into "$buildDir/classes/java/test"
-}
-
-task testDynzillaWebApp(type: Test) {
-    String WEB_INF_DIR = "$buildDir/resources/test/WEB-INF/".replace("/", File.separator)
-
-    systemProperties([
-            "WEB_INF_DIR": WEB_INF_DIR
-    ])
-}
-
-testDynzillaWebApp.dependsOn(copyTestPropertiesToClassFolder)

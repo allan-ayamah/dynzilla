@@ -18,6 +18,7 @@
       "propagations": [
         {
           "sourceComponent": "msg1",
+          "sourceParam": "msg1.par23",
           "targetParam": "dtl1.userId",
           "sourceValue": "256"
         }

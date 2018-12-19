@@ -1,16 +1,15 @@
 package com.atena.dynzilla;
 
-import com.google.gson.JsonObject;
 import org.apache.logging.log4j.Logger;
-public interface Service {
 
+import java.util.Map;
+
+public interface DYNService {
     String getId();
 
-    String getName();
+    Map getDescr();
 
-    JsonObject getDescr();
-
-    ModelManager getManager();
+    DYNModelManager getManager();
 
     Logger getLog();
 
@@ -19,6 +18,8 @@ public interface Service {
     void logTrace(String msg);
 
     void logError(String msg, Throwable e);
+
+    void logDebug(String msg);
 
     void logDebug(String msg, Throwable e);
 }

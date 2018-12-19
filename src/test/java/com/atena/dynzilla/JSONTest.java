@@ -1,27 +1,26 @@
 package com.atena.dynzilla;
 
-import java.io.*;
-import java.nio.charset.Charset;
-
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import com.google.gson.stream.JsonReader;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
 import org.junit.Before;
-import org.junit.Test;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.Charset;
 
 public class JSONTest {
     private String descrFolder;
 
     @Before
     public void setUp() {
-        descrFolder = "C:/Users/Au19/Workspace/projects/dynzilla/src/test/resources/WEB-INF/descr/";
+        descrFolder = "C:/Users/Au19/Workspace/projects/dynzilla/src/test-operation-chain/resources/WEB-INF/descr/";
     }
 
-    @Test
-    public void testReadDescr() throws DynException {
+    //@Test
+    public void testReadDescr() throws DYNException {
         String id = "_dyn_model";
         String modelId = "mdl1";
         JsonObject descr = readDescriptor(modelId +"/"+id);
@@ -29,12 +28,12 @@ public class JSONTest {
         System.out.println(descr);
     }
 
-    private JsonObject readDescriptor(String id) throws DynException{
+    private JsonObject readDescriptor(String id) throws DYNException {
         String relativePath = descrFolder + id + ".json";
         InputStream in =  null;
         try {
             in = getResourceStream(relativePath);
-        } catch (DynException e2) {
+        } catch (DYNException e2) {
             logError("", e2);
             IOUtils.closeQuietly(in);
             throw e2;
@@ -49,7 +48,7 @@ public class JSONTest {
             return descr;
         } catch (IOException e) {
             logError("Could not read descriptor" + id, e);
-            throw new DynException("Could not read descriptor" + id, e);
+            throw new DYNException("Could not read descriptor" + id, e);
         } finally {
             IOUtils.closeQuietly(in);
         }
@@ -57,12 +56,12 @@ public class JSONTest {
 
 
 
-    public InputStream getResourceStream(String relativePath) throws DynException {
+    public InputStream getResourceStream(String relativePath) throws DYNException {
         InputStream in = null;
         try {
             in = new FileInputStream(relativePath);
         } catch (FileNotFoundException e) {
-            throw new DynException("Could not find resource at "+ relativePath , e);
+            throw new DYNException("Could not find resource at "+ relativePath , e);
         }
         return in;
     }

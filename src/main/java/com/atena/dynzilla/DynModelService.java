@@ -1,5 +1,5 @@
 package com.atena.dynzilla;
 
-public interface DynModelService extends Service {
+public interface DYNModelService extends DYNService {
 
 }

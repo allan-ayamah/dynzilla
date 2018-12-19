@@ -1,0 +1,196 @@
+{
+  "service": "com.atena.dynzilla.core.ModelService",
+  "name": "Welcome to Dynzilla Model",
+  "manager": {
+    "service": "com.atena.dynzilla.core.ModelManager",
+    "serviceContextHelpers": {
+      "operationContext": "com.atena.dynzilla.core.OperationContextHelper",
+      "pageContext": "com.atena.dynzilla.core.PageContextParameterService"
+    }
+  },
+  "descriptors": {
+    "mic1": {
+      "service": "com.atena.dynzilla.component.module.ModuleInstanceComponent",
+      "module": {
+        "id": "opm1"
+      },
+      "DYNContext": {
+        "context": "operationContext",
+        "outgoingLinks": [
+          {
+            "id": "okln1OnMic1",
+            "resultCode": "success.opc1"
+          },
+          {
+            "id": "okln3OnMic1",
+            "resultCode": "success.opc3"
+          },
+          {
+            "id": "koln1OnMic1",
+            "resultCode": "error.opc2"
+          }
+        ]
+      }
+    },
+    "opm1": {
+      "service": "com.atena.dynzilla.component.module.OperationModule",
+      "inputParamCollectorId": "ipc1",
+      "OKParamCollectors": ["opc1", "opc3"],
+      "KOParamCollectors": ["opc2"]
+    },
+    "ipc1": {
+      "service": "com.atena.dynzilla.component.module.ParameterCollector",
+      "type": "INPUT",
+      "params": [
+        {
+          "id": "icc1",
+          "name": "firstOperand"
+        },
+        {
+          "id": "icc2",
+          "name": "secondOperand"
+        },
+      ],
+      "DYNContext": {
+        "context": "operationContext",
+        "outgoingLinks": [
+          {
+            "id": "okln1Onipc1",
+            "resultCode": "success"
+          }
+        ]
+      }
+    },
+    "sumc1": {
+      "service": "com.atena.dynzilla.component.utilities.SumComponent",
+      "name": "Add a to b",
+      "inputType": "dynamic",
+      "DYNContext": {
+        "context": "operationContext",
+        "params": [
+          {
+            "id": "sumc1.firstOperand"
+          },
+          {
+            "id": "sumc1.secondOperand"
+          }
+        ],
+        "outgoingLinks": [
+          {
+            "id": "okln1",
+            "resultCode": "success"
+          },
+          {
+            "id": "ln2",
+            "data": "true",
+            "resultCode": "success"
+          },
+          {
+            "id": "ln2",
+            "data": "true",
+            "resultCode": "error"
+          },
+          {
+            "id": "koln1",
+            "resultCode": "error"
+          }
+        ]
+      }
+    },
+    "sumc2": {
+      "service": "com.atena.dynzilla.component.utilities.SumComponent",
+      "name": "Add c to d",
+      "DYNContext": {
+        "context": "operationContext",
+        "params": [
+          {
+            "id": "sumc2.firstOperand"
+          },
+          {
+            "id": "sumc2.secondOperand"
+          }
+        ],
+        "outgoingLinks": [
+          {
+            "id": "okln2",
+            "resultCode": "success"
+          }
+        ]
+      }
+    },
+    "msgc1": {
+      "service": "com.atena.dynzilla.component.view.MessageComponent",
+      "name": "Message component to show result",
+      "outputType": "dynamic",
+      "DYNContext": {
+        "context": "operationContext",
+        "params": [
+          {
+            "id": "msgc1.outputMessage"
+          }
+        ]
+      }
+    },
+    "ln1": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "name": "Click to add a to b then use the result as c and add constant d ",
+      "sourceId": "dummyform1",
+      "targetId": "sumc1",
+      "propagations": [
+        {
+          "targetParam": "sumc1.firstOperand",
+          "constantSourceValue": "1"
+        },
+        {
+          "targetParam": "sumc1.secondOperand",
+          "constantSourceValue": "2"
+        }
+      ]
+    },
+    "okln1": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "sourceId": "sumc1",
+      "targetId": "sumc2",
+      "propagations": []
+    },
+    "ln2": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "name": "Propagate sumc1 result as firstOperand",
+      "sourceId": "sumc1",
+      "targetId": "sumc2",
+      "propagations": [
+        {
+          "sourceParam": "sumc1.result",
+          "targetParam": "sumc2.firstOperand"
+        },
+        {
+          "targetParam": "sumc2.secondOperand",
+          "constantSourceValue": "2"
+        }
+      ]
+    },
+    "koln1": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "sourceId": "sumc1",
+      "targetId": "msgc1",
+      "propagations": [
+        {
+          "constantSourceValue": "An error occurred while adding a to b",
+          "targetParam": "msgc1.outputMessage"
+        }
+      ]
+    },
+    "okln2": {
+      "service": "com.atena.dynzilla.core.LinkService",
+      "name": "Final result",
+      "sourceId": "sumc2",
+      "targetId": "msgc1",
+      "propagations": [
+        {
+          "sourceParam": "sumc2.result",
+          "targetParam": "msgc1.outputMessage"
+        }
+      ]
+    }
+  }
+}

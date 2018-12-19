@@ -1,13 +1,13 @@
 package com.atena.dynzilla;
 
 
-public class DynException extends Exception {
+public class DYNException extends Exception {
 
-    public DynException(String msg) {
+    public DYNException(String msg) {
         super(msg);
     }
 
-    public DynException(String msg, Throwable e) {
+    public DYNException(String msg, Throwable e) {
         super(msg, e);
     }
 }

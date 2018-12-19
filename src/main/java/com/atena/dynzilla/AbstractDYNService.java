@@ -1,17 +1,17 @@
 package com.atena.dynzilla;
 
-import com.google.gson.JsonObject;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import org.apache.logging.log4j.LogManager;
+import java.util.Map;
 
-public abstract class AbstractService implements Service {
+public abstract class AbstractDYNService implements DYNService {
   private String id;
-  private JsonObject descr;
-  private ModelManager mgr;
+  private Map descr;
+  private DYNModelManager mgr;
   private Logger logger;
 
-  public AbstractService(String id, ModelManager mgr, JsonObject descr) throws DynException {
+  public AbstractDYNService(String id, DYNModelManager mgr, Map descr) throws DYNException {
     this.id = id;
     this.mgr = mgr;
     this.descr = descr;
@@ -23,16 +23,12 @@ public abstract class AbstractService implements Service {
     return this.id;
   }
 
-  @Override
-  public String getName() {
-    return null;
-  }
 
-  public JsonObject getDescr() {
+  public Map getDescr() {
     return this.descr;
   }
 
-  public ModelManager getManager() {
+  public DYNModelManager getManager() {
     return this.mgr;
   }
 
@@ -43,28 +39,35 @@ public abstract class AbstractService implements Service {
   @Override
   public void logInfo(String msg) {
     if (getLog().isInfoEnabled()) {
-      getLog().info(getId() + " " + msg);
+      getLog().info(getId() + ": " + msg);
     }
   }
 
   @Override
   public void logTrace(String msg) {
     if (getLog().isTraceEnabled()) {
-      getLog().trace(getId() + " " + msg);
+      getLog().trace(getId() + ": " + msg);
     }
   }
 
   @Override
   public void logError(String msg, Throwable e) {
     if (getLog().isErrorEnabled()) {
-      getLog().error(getId() + " " + msg, e);
+      getLog().error(getId() + ": " + msg, e);
+    }
+  }
+
+
+  public void logDebug(String msg) {
+    if(getLog().isDebugEnabled()) {
+      getLog().debug(getId() + ": " + msg);
     }
   }
 
   @Override
   public void logDebug(String msg, Throwable e) {
     if (getLog().isDebugEnabled()) {
-      getLog().debug(getId() + " " + msg, e);
+      getLog().debug(getId() + ": " + msg, e);
     }
   }
 }
