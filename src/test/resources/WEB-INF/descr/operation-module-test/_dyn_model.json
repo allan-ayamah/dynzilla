@@ -12,22 +12,23 @@
     "mic1": {
       "service": "com.atena.dynzilla.component.module.ModuleInstanceComponent",
       "module": {
-        "id": "opm1"
+        "id": "opm1",
+        "type": "operation"
       },
+      "inputParams": [
+        "icc1",
+        "icc2"
+      ],
       "DYNContext": {
         "context": "operationContext",
         "outgoingLinks": [
           {
             "id": "okln1OnMic1",
-            "resultCode": "success.opc1"
-          },
-          {
-            "id": "okln3OnMic1",
-            "resultCode": "success.opc3"
+            "resultCode": "success"
           },
           {
             "id": "koln1OnMic1",
-            "resultCode": "error.opc2"
+            "resultCode": "error"
           }
         ]
       }
@@ -80,11 +81,11 @@
       "propagations": [
         {
           "sourceParam": "icc1",
-          "targetParam": "sumc1.firstOperand"
+          "targetParam": "firstOperand"
         },
         {
           "sourceParam": "icc2",
-          "targetParam": "sumc1.secondOperand"
+          "targetParam": "secondOperand"
         }
       ]
     },

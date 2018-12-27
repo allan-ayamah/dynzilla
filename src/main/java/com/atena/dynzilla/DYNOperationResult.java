@@ -18,4 +18,7 @@ public interface DYNOperationResult extends Map {
   Throwable getException();
 
   void setCause(String cause);
+
+    void setOutputCollectorId(String componentId);
+    String getOutputCollectorId();
 }

@@ -17,7 +17,7 @@
       "DYNContext": {
         "context": "operationContext",
         "outgoingLinks": [
-          {
+            {
             "id": "okln1OnMic1",
             "resultCode": "success.opc1"
           },

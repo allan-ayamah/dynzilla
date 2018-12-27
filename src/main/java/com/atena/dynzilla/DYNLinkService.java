@@ -2,7 +2,7 @@ package com.atena.dynzilla;
 
 import java.util.Map;
 
-public interface DYNLinkService {
+public interface DYNLinkService extends DYNService{
   String getSourceId();
 
   String getTargetId();
@@ -15,4 +15,6 @@ public interface DYNLinkService {
 
   void propagateValue(Object value, Map targetParams, DYNOperationRequest opRequest)
       throws DYNException;
+
+  void propagatePageParams(DYNOperationRequest requestContext) throws DYNException;
 }

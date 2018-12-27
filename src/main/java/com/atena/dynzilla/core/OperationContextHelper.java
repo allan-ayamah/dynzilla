@@ -13,13 +13,9 @@ public class OperationContextHelper extends AbstractDYNService implements DYNSer
   // they are links coming from components the are not executed
   // like the 'Get session/ set session' components
   private List<String> precedingIncomingLinks;
-
   private Map<String, List<String>> allOutgoingLinks;
-
   private Map<String, String> primaryOutgoingLinks;
-
   private Set<String> outgoingDataLinks;
-
   public OperationContextHelper(String id, DYNModelManager mgr, Map descr) throws DYNException {
     super(id, mgr, descr);
 

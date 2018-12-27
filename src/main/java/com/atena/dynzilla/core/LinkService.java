@@ -40,7 +40,7 @@ public class LinkService extends AbstractDYNService implements DYNLinkService {
   public void propagateFromResult(Map resultMap, Map targetParams, DYNOperationRequest operationCtxRequest) throws DYNException {
     for (LinkPropagation propagation : propagations) {
       propagation.propagate(resultMap, targetParams);
-    }
+  }
   }
 
   @Override
@@ -50,6 +50,12 @@ public class LinkService extends AbstractDYNService implements DYNLinkService {
     }
   }
 
+  @Override
+  public void propagatePageParams(DYNOperationRequest pageRequest) throws DYNException {
+    for(LinkPropagation propagation : propagations) {
+      propagation.propagatePageParams(pageRequest);
+    }
+  }
 
   @Override
   public String getSourceId() {

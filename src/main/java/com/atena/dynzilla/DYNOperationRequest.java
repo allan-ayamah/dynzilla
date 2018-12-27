@@ -9,4 +9,6 @@ public interface DYNOperationRequest {
 
     /* Every component in an operation context has a set on input*/
     Map getServiceParams(String id);
+    DYNOperationRequest getServiceRequest(String serviceId);
+    DYNOperationResult getServiceResultBean(String serviceId);
 }

@@ -14,8 +14,8 @@ public class SumComponent extends AbstractDYNService implements DYNOperationServ
   public void execute(DYNOperationRequest request, DYNOperationResult result) {
     Map paramMap = request.getParameters();
     try {
-      int firstOperandValue = (int) paramMap.get(getId() + ".firstOperand");
-      int secondOperandValue = (int) paramMap.get(getId() + ".secondOperand");
+      int firstOperandValue = (int) paramMap.get("firstOperand");
+      int secondOperandValue = (int) paramMap.get("secondOperand");
       result.put("result", firstOperandValue + secondOperandValue);
       result.setResultCode(DYNConstants.SUCCESS_CODE);
     } catch (Throwable e) {

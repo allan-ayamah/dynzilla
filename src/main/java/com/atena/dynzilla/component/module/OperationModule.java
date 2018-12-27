@@ -78,6 +78,7 @@ public class OperationModule extends AbstractDYNService implements DYNOperationS
             "Reached output collector: '" + componentId + "', resultCode: '" + resultCode + "' ");
         operationResult.putAll(componentResult);
         operationResult.setResultCode(resultCode);
+        operationResult.setOutputCollectorId(componentId);
         return;
       }
 

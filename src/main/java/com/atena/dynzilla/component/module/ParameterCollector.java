@@ -11,7 +11,6 @@ import java.util.Map;
 public class ParameterCollector extends AbstractDYNService implements DYNOperationService {
   private String type;
   private List parameters;
-
   public ParameterCollector(String id, DYNModelManager mgr, Map descr) throws DYNException {
     super(id, mgr, descr);
     type = DescriptorHelper.getString(descr, "type", true, this);

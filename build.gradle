@@ -20,6 +20,7 @@ dependencies {
     compile group: 'commons-lang', name: 'commons-lang', version: '2.4'
     compile group: 'commons-io', name: 'commons-io', version: '2.5'
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
     compile 'com.google.code.gson:gson:2.8.5'
 }
 

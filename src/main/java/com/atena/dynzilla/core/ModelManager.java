@@ -100,6 +100,15 @@ public class ModelManager implements DYNModelManager {
     throw new DYNException("Service[" + id + "] does not implement class: " + DYNLinkService.class);
   }
 
+  @Override
+  public DYNContentService getContentService(String id) throws DYNException {
+    DYNService service = getService(id);
+    if (service instanceof DYNOperationService) {
+      return (DYNContentService) service;
+    }
+    throw new DYNException("Service[" + id + "] does not implement class: " + DYNContentService.class);
+  }
+
   private Map readDescriptor(String id) throws DYNException {
     String actualServiceId = id;
     boolean isServiceParamHelper = StringUtils.endsWith(id, DYNServiceContextHelper.ID_SUFFIX);

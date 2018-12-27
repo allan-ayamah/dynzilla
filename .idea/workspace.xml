@@ -2,25 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d673812-daf5-4b96-b0c9-dd2e6148b34c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/view/FormComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/view/FormField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/PageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/module/ModuleInstanceComponentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/view/FormFieldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Au19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Au19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/AbstractService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNLinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNLinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNModelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DynException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DynException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DynManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DynModelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DynModelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/ModelManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ModuleInstanceComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ModuleInstanceComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ParameterCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ParameterCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/BeanHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/BeanHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultLinkService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultModelManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultModelService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultPageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DescriptorHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DescriptorHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/JSONTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/JSONTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/DefaultManagerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/WEB-INF/classes/log4j2.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/mdl1/_dyn_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/mdl1/_dyn_model.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationContextHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationContextHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractDYNServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractDYNServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/utilities/SumComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/utilities/SumComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/operation-module-test/_dyn_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/operation-module-test/_dyn_model.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/test-model-manager/_dyn_model.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/test-model-manager/_dyn_model.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -79,27 +88,27 @@
     <session id="-119252847">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bat" value="2" />
           <entry key="class" value="2" />
-          <entry key="gradle" value="19" />
+          <entry key="gradle" value="20" />
           <entry key="gradlew" value="3" />
-          <entry key="java" value="347" />
+          <entry key="java" value="393" />
           <entry key="js" value="1" />
-          <entry key="json" value="16" />
+          <entry key="json" value="21" />
           <entry key="properties" value="4" />
           <entry key="xml" value="3" />
         </counts>
@@ -107,9 +116,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="Groovy" value="19" />
-          <entry key="JAVA" value="347" />
-          <entry key="JSON" value="16" />
+          <entry key="Groovy" value="20" />
+          <entry key="JAVA" value="393" />
+          <entry key="JSON" value="21" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="4" />
@@ -120,9 +129,9 @@
         <counts>
           <entry key="class" value="11" />
           <entry key="dummy" value="5" />
-          <entry key="gradle" value="1924" />
-          <entry key="java" value="46563" />
-          <entry key="json" value="1730" />
+          <entry key="gradle" value="1925" />
+          <entry key="java" value="60254" />
+          <entry key="json" value="1821" />
           <entry key="properties" value="143" />
           <entry key="txt" value="189" />
         </counts>
@@ -130,9 +139,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="11" />
-          <entry key="Groovy" value="1924" />
-          <entry key="JAVA" value="46563" />
-          <entry key="JSON" value="1730" />
+          <entry key="Groovy" value="1925" />
+          <entry key="JAVA" value="60254" />
+          <entry key="JSON" value="1821" />
           <entry key="PLAIN_TEXT" value="194" />
           <entry key="Properties" value="143" />
         </counts>
@@ -144,98 +153,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ParameterCollector.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/view/FormComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="51">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DescriptorHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/LinkServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationContextHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/WEB-INF/descr/mdl1/_dyn_model.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ContextFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
-              <folding>
-                <element signature="e#1225#1226#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1745#1746#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1998#1999#0" expanded="true" />
-                <element signature="e#2038#2039#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,21 +168,70 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/BeanHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="629">
+              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractDYNServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
+            <state relative-caret-position="2108">
+              <caret line="129" column="27" selection-start-line="128" selection-start-column="23" selection-end-line="129" selection-end-column="27" />
               <folding>
-                <element signature="e#3242#3243#0" expanded="true" />
-                <element signature="e#3274#3275#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1413#1414#0" expanded="true" />
+                <element signature="e#1460#1461#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/PageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1309">
+              <caret line="85" column="68" selection-start-line="85" selection-start-column="68" selection-end-line="85" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="44" selection-start-column="44" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNLinkService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -269,8 +242,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -288,6 +261,9 @@
       <find>get</find>
       <find>get(</find>
       <find>allocatedInputMapForService</find>
+      <find>opc1</find>
+      <find>propagateBeforeExecute</find>
+      <find>updateField</find>
     </findStrings>
     <replaceStrings>
       <replace>LinkPropagation</replace>
@@ -489,9 +465,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6178941910101" />
+        <entry key="$PROJECT_DIR$" value="6179210724396" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1020829724" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3047844034" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="1068687110" />
       </map>
@@ -678,15 +654,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/ModelManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultModelDYNService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultModelManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultDYNAppManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationCtxHelperService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/JSONTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/ApplicationManagerTest.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNContextInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNResponse.java" />
@@ -695,40 +662,49 @@
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNServiceRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/utilities/SumComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ContextFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNServiceContextHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/OperationContextHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DescriptorHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ParameterCollector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNLinkService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DefaultOperationHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationModule.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/LinkServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/OperationRequestHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/test-model-manager/_dyn_model.js" />
-        <option value="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/test-model-manager/_dyn_model.json" />
-        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractDYNServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ModuleInstanceComponent.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/ModelManagerTest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/operation-module/_dyn_model.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNModelManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/AbstractDYNService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationContextHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/operation-module-test/_dyn_model.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/module/OperationModuleTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelManager.java" />
         <option value="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/mdl1/_dyn_model.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ParameterCollector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractDYNServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DescriptorHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNContentService.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/test-model-manager/_dyn_model.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNLinkService.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/WEB-INF/descr/operation-module-test/_dyn_model.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationRequest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/module/ModuleInstanceComponentTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/utilities/SumComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ModuleInstanceComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNModelManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationContextHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/PageService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/view/FormFieldTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/BeanHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/view/FormField.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/view/FormComponent.java" />
       </list>
     </option>
   </component>
@@ -739,10 +715,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2141" />
-    <option name="y" value="-9" />
-    <option name="width" value="1921" />
-    <option name="height" value="1044" />
+    <option name="x" value="1691" />
+    <option name="y" value="159" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -751,6 +727,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -758,23 +735,17 @@
               <item name="dynzilla" type="b2602c69:ProjectViewProjectNode" />
               <item name="dynzilla" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
-            <path>
-              <item name="dynzilla" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dynzilla" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545225926595" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545411517129" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Project" />
@@ -790,8 +761,9 @@
       <recent name="com.atena.dynzilla.core" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.atena.dynzilla.core" />
+      <recent name="com.atena.dynzilla.component.view" />
       <recent name="com.atena.dynzilla.component.module" />
+      <recent name="com.atena.dynzilla.core" />
       <recent name="com.atena.dynzilla" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -828,7 +800,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.OperationModuleTest.execute">
+  <component name="RunManager" selected="Gradle.FormFieldTest.fieldTypes">
+    <configuration name="FormFieldTest.fieldTypes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.atena.dynzilla.component.view.FormFieldTest.fieldTypes&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="ModelManagerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -848,12 +839,12 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
-    <configuration name="ModelManagerTest.getServiceCtxHelper" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModuleInstanceComponentTest.execute" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.atena.dynzilla.core.ModelManagerTest.getServiceCtxHelper&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.atena.dynzilla.component.module.ModuleInstanceComponentTest.execute&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -905,38 +896,20 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
-    <configuration name="dynzilla [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Gradle.ModelManagerTest" />
-      <item itemvalue="Gradle.ModelManagerTest.getServiceCtxHelper" />
-      <item itemvalue="Gradle.dynzilla [clean]" />
       <item itemvalue="Gradle.OperationModuleTest.constructorTest" />
       <item itemvalue="Gradle.OperationModuleTest.execute" />
+      <item itemvalue="Gradle.ModuleInstanceComponentTest.execute" />
+      <item itemvalue="Gradle.FormFieldTest.fieldTypes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FormFieldTest.fieldTypes" />
+        <item itemvalue="Gradle.ModuleInstanceComponentTest.execute" />
         <item itemvalue="Gradle.OperationModuleTest.execute" />
         <item itemvalue="Gradle.OperationModuleTest.constructorTest" />
         <item itemvalue="Gradle.ModelManagerTest" />
-        <item itemvalue="Gradle.ModelManagerTest.getServiceCtxHelper" />
-        <item itemvalue="Gradle.dynzilla [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -954,38 +927,38 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 08m 57s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.19 at 17h 35m 09s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 13m 27s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.19 at 17h 39m 00s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 20m 49s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.20 at 16h 03m 38s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 28m 52s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.20 at 16h 04m 19s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 44m 43s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.20 at 16h 11m 25s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 51m 12s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.20 at 16h 13m 02s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 51m 28s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.20 at 16h 13m 36s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 51m 51s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="ModuleInstanceComponentTest_execute - 2018.12.20 at 16h 14m 05s.xml">
+      <configuration name="ModuleInstanceComponentTest.execute" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 54m 32s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="FormFieldTest_fieldTypes - 2018.12.21 at 09h 36m 54s.xml">
+      <configuration name="FormFieldTest.fieldTypes" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="OperationModuleTest_execute - 2018.12.19 at 13h 57m 58s.xml">
-      <configuration name="OperationModuleTest.execute" configurationId="GradleRunConfiguration" />
+    <history-entry file="FormFieldTest_fieldTypes - 2018.12.21 at 09h 37m 12s.xml">
+      <configuration name="FormFieldTest.fieldTypes" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -997,26 +970,26 @@
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1691" height="917" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.23695518" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.24923266" />
       <window_info id="Structure" order="1" sideWeight="0.5012854" side_tool="true" weight="0.22774708" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5012854" side_tool="true" weight="0.22774708" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49969307" weight="0.59125966" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32948717" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.281491" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.46401027" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49969307" weight="0.4048843" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.23007712" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" visible="true" weight="0.32904884" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49846533" visible="true" weight="0.19023137" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32904884" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50030696" side_tool="true" weight="0.59125966" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50030696" side_tool="true" weight="0.46401027" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.43573266" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49969307" weight="0.59125966" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24984653" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1024,8 +997,8 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" weight="0.12461633" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3296501" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3296501" />
+      <window_info anchor="right" id="Gradle" order="8" weight="0.12461633" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.23695518" />
@@ -1072,16 +1045,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Implemented and tested operation module component.&#10;&#10;TODO:  implement module instance component" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Remote">
         <watch expression="result.entrySet().toArray()[1]" />
@@ -1093,97 +1056,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="457" column="5" lean-forward="true" selection-start-line="457" selection-start-column="5" selection-end-line="457" selection-end-column="5" />
-          <folding>
-            <element signature="e#19103#19104#0" expanded="true" />
-            <element signature="e#19161#19162#0" expanded="true" />
-            <element signature="e#19327#19328#0" expanded="true" />
-            <element signature="e#19410#19411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="346" column="5" lean-forward="true" selection-start-line="346" selection-start-column="5" selection-end-line="346" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/SetUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="191" column="43" lean-forward="true" selection-start-line="191" selection-start-column="43" selection-end-line="191" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/HashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="118" column="31" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/collection/UnmodifiableCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="81" column="25" lean-forward="true" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/78c50ebda5784937ca1615fc0e1d0cb35857d572/commons-collections-3.2.2-sources.jar!/org/apache/commons/collections/CollectionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="1161" column="44" selection-start-line="1161" selection-start-column="44" selection-end-line="1161" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ParameterCollector.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNServiceContextHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Override.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/junit/framework/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -1195,17 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="278" column="25" lean-forward="true" selection-start-line="278" selection-start-column="25" selection-end-line="278" selection-end-column="25" />
-          <folding>
-            <element signature="e#7861#7862#0" expanded="true" />
-            <element signature="e#7914#7915#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNLinkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1213,9 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,37 +1084,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Boolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/ApplicationManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
           <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ModuleInstanceComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="7" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,23 +1095,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/WEB-INF/descr/test-model-manager/_dyn_model.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNModelManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="84" lean-forward="true" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1302,9 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#2583#2584#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1312,52 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2510#2511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/utilities/SumComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/WEB-INF/descr/operation-module-test/_dyn_model.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="117" column="14" lean-forward="true" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1365,23 +1130,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#832#833#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1396,14 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="292" column="13" lean-forward="true" selection-start-line="292" selection-start-column="13" selection-end-line="292" selection-end-column="13" />
-          <folding>
-            <element signature="e#2922#2923#0" expanded="true" />
-            <element signature="e#2966#2967#0" expanded="true" />
-            <element signature="e#10310#10449#0" expanded="true" />
-            <element signature="e#10448#10449#0" expanded="true" />
-            <element signature="e#11040#11204#0" expanded="true" />
-            <element signature="e#11203#11204#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,40 +1154,252 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/LinkServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/WEB-INF/descr/mdl1/_dyn_model.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ContextFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="359" column="24" lean-forward="true" selection-start-line="359" selection-start-column="9" selection-end-line="359" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractDYNServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="66" column="19" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-          <folding>
-            <element signature="e#4403#4404#0" expanded="true" />
-          </folding>
+          <caret line="833" selection-start-line="833" selection-end-line="833" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/module/OperationModuleTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="60" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="130">
+          <caret line="145" column="13" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/DescriptorHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNOperationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/WEB-INF/descr/test-model-manager/_dyn_model.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/utilities/SumComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/module/OperationModuleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="62" column="15" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/module/ModuleInstanceComponentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ParameterCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ModuleInstanceComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="83" selection-start-line="22" selection-start-column="83" selection-end-line="22" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/WEB-INF/descr/operation-module-test/_dyn_model.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNContentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="113" lean-forward="true" selection-start-line="3" selection-start-column="113" selection-end-line="3" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNModelManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationContextHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="96" column="29" lean-forward="true" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/component/view/FormFieldTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Boolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.4/2b8c4b3035e45520ef42033e823c7d33e4b4402c/commons-lang-2.4-sources.jar!/org/apache/commons/lang/ArrayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/view/FormField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/view/FormComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/BeanHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2108">
+          <caret line="129" column="27" selection-start-line="128" selection-start-column="23" selection-end-line="129" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/PageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1456,90 +1408,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ModelManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="1309">
+          <caret line="85" column="68" selection-start-line="85" selection-start-column="68" selection-end-line="85" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/core/LinkServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/OperationModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        <state>
+          <caret column="44" selection-start-column="44" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/OperationContextHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/DYNLinkService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/WEB-INF/descr/mdl1/_dyn_model.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/ContextFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
-          <folding>
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1745#1746#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
-            <element signature="e#2038#2039#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/BeanHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/atena/dynzilla/AbstractDYNServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="93" column="2" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
-          <folding>
-            <element signature="e#3242#3243#0" expanded="true" />
-            <element signature="e#3274#3275#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/core/LinkPropagation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atena/dynzilla/component/module/ParameterCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="66" lean-forward="true" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>

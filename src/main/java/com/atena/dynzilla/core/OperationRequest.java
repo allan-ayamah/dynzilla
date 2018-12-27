@@ -2,6 +2,7 @@ package com.atena.dynzilla.core;
 
 import com.atena.dynzilla.DYNContextInfo;
 import com.atena.dynzilla.DYNOperationRequest;
+import com.atena.dynzilla.DYNOperationResult;
 import com.atena.dynzilla.DYNSession;
 
 import java.util.HashMap;
@@ -53,5 +54,15 @@ public class OperationRequest implements DYNOperationRequest {
             serviceIdAllocatedParamSpace.put(id, preAllocatedParamSpace);
         }
         return preAllocatedParamSpace;
+    }
+
+    @Override
+    public DYNOperationRequest getServiceRequest(String serviceId) {
+        return null;
+    }
+
+    @Override
+    public DYNOperationResult getServiceResultBean(String serviceId) {
+        return null;
     }
 }

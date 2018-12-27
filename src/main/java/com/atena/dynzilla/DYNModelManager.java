@@ -12,4 +12,6 @@ public interface DYNModelManager {
   DYNServiceContextHelper getServiceCtxHelper(String serviceId) throws DYNException;
 
   DYNLinkService getLinkService(String id) throws DYNException;
+
+  DYNContentService getContentService(String sourceId) throws DYNException;
 }

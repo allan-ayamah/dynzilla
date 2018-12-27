@@ -56,4 +56,14 @@ public class OperationResult extends HashMap implements DYNOperationResult {
   public void setCause(String cause) {
     put("cause", cause);
   }
+
+  @Override
+  public void setOutputCollectorId(String collectorId) {
+    put("outputCollectorId", collectorId);
+  }
+
+  @Override
+  public String getOutputCollectorId() {
+    return (String) get("outputCollectorId");
+  }
 }

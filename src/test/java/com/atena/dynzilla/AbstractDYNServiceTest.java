@@ -1,5 +1,6 @@
 package com.atena.dynzilla;
 
+import com.atena.dynzilla.core.ApplicationManager;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import org.apache.commons.io.IOUtils;
@@ -17,6 +18,8 @@ public class AbstractDYNServiceTest implements DYNService {
   final String resourceDir = System.getProperty("RESOURCE_DIR");
   final String webInfRelDir = System.getProperty("WEB_INF_REL_DIR");
   final String descrRelDir = System.getProperty("DESCR_REL_DIR");
+
+  private DYNAppManager appManager;
 
   public AbstractDYNServiceTest() {
     log = LogManager.getLogger(getClass());
@@ -37,6 +40,15 @@ public class AbstractDYNServiceTest implements DYNService {
             return in;
           }
         };
+
+    String webInfDir = getTestWebInfDir();
+    String descrFolder = getTestDescrDir();
+    appManager = new ApplicationManager(webInfDir, descrFolder, this.resourceLocator);
+  }
+
+
+  protected DYNAppManager getAppManager () {
+    return this.appManager;
   }
 
   protected JsonObject readDescriptor(String relativePath) throws DYNException {
